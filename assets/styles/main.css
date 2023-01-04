@@ -406,7 +406,7 @@ header{
 .section-reviews-companies{
     display: inherit;
     justify-content: space-between;
-    margin-top: 100px;
+    margin-top: 80px;
 
 }
 .default.default-price{
@@ -456,14 +456,17 @@ section .plans-prices-services div{
     background-color: #b28756;
 }
 .premium {
-    border-top:1px solid #CCC;
+    border-top:2px solid #bbb;
 }
+/* .default.light.premium{
+    border-bottom -> premium
+} */
 .section-premium .slidearea {
     display:flex;
     height:100%;
     /* justify-content: center; */
     /* align-items:center; */
-    border-bottom:1px solid #CCC;
+    border-bottom:2px solid #bbb;
     margin:auto;
     padding-bottom:40px;
 }
@@ -644,6 +647,7 @@ section .plans-prices-services div{
 }
 .section-map-info-item{
     display: flex;
+    font-weight: 600;
     align-items: center;
     color: #778;
     margin-bottom: 10px;
@@ -673,17 +677,19 @@ section .plans-prices-services div{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    padding: 0 15px;
 }
 .section-footer--area div{
     flex: 1;
 }
+
 .section-footer--center p{
     color: #aaa;
 }
 .section-footer-social{
     display: flex;
     align-items: center;
-    margin-bottom: 150px;
+    margin-bottom: 90px;
 }
 .section-footer-social a{
     display: inline-flex;
@@ -698,10 +704,11 @@ section .plans-prices-services div{
 }
 .section-footer--center{
     flex-wrap: wrap;
+    word-spacing: 3px;
 }
 .section-footer--right{
     margin-left: 50px;
-    height: 100%;
+    height: 20vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -726,7 +733,7 @@ section .plans-prices-services div{
 .section-footer--right form button{
     font-family: 'Montserrat', Arial, sans-serif;
     display: inline-block;
-    width: 190px;
+    width: 150px;
     margin-top: 40px;
     border: none;
     text-transform: uppercase;
@@ -1040,6 +1047,64 @@ section .plans-prices-services div{
         max-width: 580px;
     }
 
+    .section-reviews{
+        width: auto;
+    }
+    .section-reviews p{
+        flex-wrap: wrap;
+        padding: 0 10px;
+    }
+    .section-reviews-companies{
+        align-items: center;
+        margin: auto;
+        margin-top: 50px;
+        flex-wrap: wrap;
+        flex: 1;
+        width: 410px;
+        padding: 0 20px;
+    }
+    .section-reviews-companies a{
+        /* background-color: red; */
+        padding-bottom: 25px;
+    }
+
+    section .section-prices{
+        width: 500px;
+        flex-wrap: wrap;
+    }
+    .plans-prices:first-child{
+        padding-left: 10px;
+    }
+    .plans-prices .btn.choose:nth-child(1), .plans-prices .btn.choose{
+        margin-bottom: 20px;
+    }
+
+    .section-premium .slidearea{
+        padding: 0 15px;
+    }
+
+    .section-facts-area{
+        display: flex;
+        align-items: flex-start;
+        margin: auto;
+        flex-wrap: wrap;
+        width: 75vh;
+    }
+
+    /* .section-contact-social{
+
+    } */
+
+    .section-contact-social div{
+        margin: 0;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .section-contact-social div{
+        margin-right: 15px;
+    }
+
     .section-map{
         padding: 0 30px 0 30px;
     }
@@ -1054,6 +1119,32 @@ section .plans-prices-services div{
     }
     .section-map-info-item:last-child{
         margin-bottom: 0;
+    }
+
+    .section-footer--area{
+        flex-wrap: wrap;
+    }
+    .section-footer--left{
+        margin-right: 10px;
+    }
+    .section-footer-social{
+        flex: 1;
+        flex-wrap: wrap;
+    }
+    .section-footer--right{
+        margin-left: 12px;
+        height: 20vh;
+    }
+    .section-footer--right form input{
+        font-size: 14px;
+        padding: 8px 0px;
+    }
+    .section-footer--right form button{
+        width: 130px;
+        font-size: 13px;
+    }
+    .section-footer-social{
+        margin-bottom: 130px;
     }
 
 };
