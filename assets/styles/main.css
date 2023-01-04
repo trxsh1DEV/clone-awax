@@ -144,7 +144,7 @@ header{
 .default .section-desc{
     font-size: 12px;
     font-weight: 600;
-    color: #999;
+    color: #bbb;
     margin-bottom: 40px;
 }
 .default .section-title{
@@ -553,6 +553,7 @@ section .plans-prices-services div{
     margin: auto;
     border-bottom: 4px solid #999;
 }
+
 .section-contactus{
     display: flex;
     flex-direction: column;
@@ -588,7 +589,7 @@ section .plans-prices-services div{
     margin-right: 45px;
     padding-left: 6px;
     text-transform: uppercase;
-    color: #999;
+    color: #aaa;
     font-weight: 600;
 }
 .section-contactus form{
@@ -824,6 +825,106 @@ section .plans-prices-services div{
         max-width: 280px;
     }
 
+    .section-reviews{
+        padding-left: 3px;
+        width: auto;
+    }
+    .section-reviews-companies{
+        flex-wrap: wrap;
+        flex: 1;
+        margin: auto;
+        margin-top: 50px;
+        width: 275px;
+    }
+    .section-reviews-companies a{
+        padding-bottom: 15px;
+    }
+
+    section .section-prices{
+        flex-direction: column;
+        width: auto;
+        flex-wrap: wrap;
+    }
+    section .section-prices a{
+        margin: 20px auto 60px auto;
+    }
+
+    .section-premium .slidearea {
+        flex-direction: column;
+    }
+    .section-premium--left {
+        text-align:center;
+        margin-left: 22px;
+        margin-bottom:30px;
+    }
+    .section-premium--right {
+        padding:0 20px;
+    }
+    .section-premium--item img{
+        margin-right: 20px;
+    }
+
+    .section-facts-area{
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+    }
+    .section-facts{
+        flex: 1;
+    }
+
+    .section-contactus{
+        flex-wrap:wrap;
+        justify-content: flex-start;
+    }
+
+    /* Melhorar essa parte */
+    .section-contact-social{
+        width: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .section-contact-social a{
+        display: flex;
+        flex-direction: column;
+    }
+    .section-contact-social div{
+        visibility: hidden;
+    }
+    .section-contact-social a:first-child{
+        display: none;
+    }
+    .section-contact-social div{
+        padding-left: 0;
+        margin: 0;
+    }
+    .section-contact-social .section-contact-social-about{
+        width: 100%;
+        text-align: center;
+        padding-bottom: 25px;
+        visibility: visible;
+    }
+    .section-contact-social div:nth-child(2){
+        margin: 0;
+    }
+    .section-contactus .section-desc{
+        width: 86%;
+    }
+
+    .section-contactus form{
+        width: 100%;
+    }
+    .section-contactus form input{
+        width: 100%;
+        margin:25px 25px;
+    }
+    .section-contactus .btn{
+        width: 150px;
+    }
+
     .section-map{
         padding: 0;
         padding-bottom: 250px;
@@ -840,7 +941,44 @@ section .plans-prices-services div{
     .section-map-info-item:last-child{
         margin-bottom: 0;
     }
+
+    
+    .section-footer--area{
+        flex-direction: column;
+        align-items: center;
+        /* text-align: center; */
+    }
+    .section-footer--left{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .section-footer-social{
+        margin-bottom: 25px;
+    }
+    .section-footer--center{
+        padding: 0px 30px;
+    }
+    .section-footer--right{
+        margin: auto;
+        margin-top: 50px;
+        padding: 30px;
+        border-radius: 4px;
+    }
+    .section-footer--right form button{
+        width: 150px;
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media (min-width:450px) and (max-width:800px){
